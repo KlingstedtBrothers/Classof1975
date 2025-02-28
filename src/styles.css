@@ -57,7 +57,7 @@ p {
 .attendee {
   font-size: 18px !important;
   font-weight: 500;
-  margin-bottom: -5px;
+  margin-bottom: 10px;
 }
 
 .missing {
@@ -70,6 +70,7 @@ p {
   font-size: 16px !important;
   font-weight: 400;
   margin-bottom: 15px;
+  display: none;
 }
 
 .thanks {
