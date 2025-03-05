@@ -75,16 +75,18 @@
 
 
             <div class="lc-block pt-5 animate-bounce">
-                <svg onclick="if (!document.querySelector('body').classList.contains('livecanvas-is-editing') ) this.closest('section').nextElementSibling.scrollIntoView({ behavior: 'smooth'  });"
-                    width="4.2em" height="4em" viewBox="0 0 16 16" class="text-light" fill="currentColor"
-                    xmlns="http://www.w3.org/2000/svg" lc-helper="svg-icon">
-                    <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z">
-                    </path>
-                    <path fill-rule="evenodd"
-                        d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z">
-                    </path>
-
-                </svg>
+                <a href="#event"><svg
+                        onclick="if (!document.querySelector('body').classList.contains('livecanvas-is-editing') ) this.closest('section').nextElementSibling.scrollIntoView({ behavior: 'smooth'  });"
+                        width="4.2em" height="4em" viewBox="0 0 16 16" class="text-light expand-on-hover"
+                        fill="currentColor" xmlns="http://www.w3.org/2000/svg" lc-helper="svg-icon">
+                        <path fill-rule="evenodd"
+                            d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z">
+                        </path>
+                        <path fill-rule="evenodd"
+                            d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z">
+                        </path>
+                    </svg>
+                </a>
 
                 <!-- for Safari support only, remove if you want  -->
                 <script async="" src="https://unpkg.com/smoothscroll-polyfill/dist/smoothscroll.min.js"></script>
@@ -170,8 +172,8 @@
                     <div class="card-body">
                         <h5 class="card-title pb-3">Step 1</h5>
                         <p>Download, print and fill out the full registration form below. </p>
-                        <a href="../pdf/2025 Reunion Registration.pdf" class="btn btn-primary">Download Form <i
-                                class="fa-solid fa-file-arrow-down ms-2"></i></a>
+                        <a href="../pdf/2025 Reunion Registration.pdf" class="btn btn-primary" target="_blank">Download
+                            Form <i class="fa-solid fa-file-arrow-down ms-2"></i></a>
                     </div>
                 </div>
             </div>
@@ -179,7 +181,7 @@
                 <div class=" mx-auto photo-card">
                     <div class="card-body">
                         <h5 class="card-title pb-3">Step 2</h5>
-                        <p>Mail your registration form & Check/Cash payment to: </p>
+                        <p>Mail your registration form & check/cash payment to: </p>
                         <div class="contact-info d-flex flex-column align-items-center">
                             <p class="text-center address-header pt-1">Reunion Committe</p>
                             <p class="text-center address">2872 Saxon Street NE</p>
@@ -683,7 +685,7 @@
                     <div class="d-flex flex-row justify-content-center gap-5 w-100 mx-auto">
                         <div>
                             <a href="../pdf/GHS Yearbook Photos.pdf" target="_blank" class="mx-auto">
-                                <button type="button" class="btn btn-primary mt-5">See More</button>
+                                <button type="button" class="btn btn-outline-secondary mt-5">See More</button>
                             </a>
                         </div>
 

@@ -169,6 +169,17 @@ p {
   width: 15rem;
 }
 
+.expand-on-hover {
+  transition: transform 0.3s ease;
+  /* Smooth transition */
+}
+
+.expand-on-hover:hover {
+  transform: scale(1.2);
+  /* Increase size by 20% */
+}
+
+
 
 /*MOBILE STYLES START*/
 
