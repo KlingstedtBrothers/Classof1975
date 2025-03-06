@@ -50,7 +50,7 @@ p {
 }
 
 .deceased {
-  width: 40%;
+  width: 50%;
   padding-bottom: 1rem;
 }
 
@@ -179,6 +179,9 @@ p {
   /* Increase size by 20% */
 }
 
+.lead-alt {
+  font-size: 18px;
+}
 
 
 /*MOBILE STYLES START*/
@@ -232,12 +235,14 @@ p {
   }
 
   .spacer {
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
 
   .list-header {
-    max-width: 75%;
+    font-size: 35px;
+
+    max-width: 95%;
     margin: auto;
   }
 
@@ -289,6 +294,10 @@ p {
     width: 18rem;
   }
 
+  .lead-alt {
+    font-size: 15px;
+  }
+
 }
 
 @media screen and (min-width: 768px) {
@@ -300,4 +309,5 @@ p {
     margin-right: 0;
     padding: 0 1em;
   }
+
 }
