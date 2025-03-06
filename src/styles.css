@@ -183,10 +183,28 @@ p {
   font-size: 18px;
 }
 
+.lead-alt-2 {
+  font-size: 22px;
+}
+
+.timer {
+  font-size: 2rem;
+
+
+  border-radius: 5px;
+  text-align: center;
+
+}
+
 
 /*MOBILE STYLES START*/
 
 @media screen and (max-width: 450px) {
+  .timer {
+    font-size: 25px;
+    padding-top:
+  }
+
   .navbar-brand img {
     width: 50px;
   }
@@ -208,6 +226,10 @@ p {
     font-size: 22px;
   }
 
+  .attendee {
+    font-size: 22px !important;
+
+  }
 
   .card-text {
     font-size: 15px !important;
@@ -232,6 +254,14 @@ p {
   .shirt-button {
     margin-left: 15px !important;
     margin-bottom: 50px;
+  }
+
+  .address {
+    font-size: 20px;
+  }
+
+  .address-header {
+    font-size: 20px;
   }
 
   .spacer {

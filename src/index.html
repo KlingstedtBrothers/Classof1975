@@ -59,7 +59,7 @@
     <!--NAVIGATION-->
 
     <!--HERO-->
-    <div class="d-flex min-vh-100 main-hero" lc-helper="background"
+    <div class="d-flex justify-content-center justify-content-md-start min-vh-100 main-hero" lc-helper="background"
         style="background:url(../img/3148786323_e42d737a6b_b.jpg)  center / cover no-repeat; background-color:#444; background-blend-mode: overlay;">
         <div class="align-self-center text-center text-light col-md-8 offset-md-2">
             <div class="lc-block">
@@ -103,6 +103,7 @@
         <h1 class="display-1 mb-3 mb-md-1 fw-bold text-uppercase text-primary">mark your calendars</h1>
         <h3 class="display-6 mb-4 mb-md-4">Talk it up and spread the news. We will be celebrating 50 years!</h3>
         <h3 class="sub-alt-heading">Saturday, October 4th, 2025</h3>
+        <div id="countdown" class="timer"></div>
         <a href="../pdf/50th mark.pdf" class="btn btn-lg btn-primary mt-5 " target="_blank">Download Flyer</a>
     </div>
     <!--MAIN HEADING-->
@@ -118,7 +119,8 @@
                 <img class="card-img-top" src="../img/cardheader.jpg" alt="Card image cap">
 
                 <div class="bg-secondary">
-                    <h2 class="display-6 fw-bold mb-2 mt-4 text-white text-center">Glenwood High School Class of 1975's
+                    <h2 class="display-6 fw-bold mb-2 mt-4 text-white text-center">Glenwood <span
+                            class="d-none d-md-inline">High School</span> Class of 1975's
                     </h2>
                     <h2 class="display-6 fw-bold mb-4 text-white text-center">50th Class Reunion
                     </h2>
@@ -152,7 +154,7 @@
 
 
                         <p class="text-center"><i>Please RSVP to <a href="mailto:dbellamy48@yahoo.com"> Deborah Mitchell
-                                    Bellamy </a>ASAP</i>
+                                    Bellamy </a>ASAP if you plan on paying at the door</i>
                         </p>
                     </div>
                 </div>
@@ -171,7 +173,7 @@
                 <div class=" mx-auto photo-card">
                     <div class="card-body">
                         <h5 class="card-title pb-3">Step 1</h5>
-                        <p class="lead-alt">Download, print and fill out the full registration form below. </p>
+                        <p class="lead-alt-2">Download, print and fill out the full registration form below. </p>
                         <a href="../pdf/2025 Reunion Registration.pdf" class="btn btn-primary" target="_blank">Download
                             Form <i class="fa-solid fa-file-arrow-down ms-2"></i></a>
                     </div>
@@ -181,16 +183,18 @@
                 <div class=" mx-auto photo-card">
                     <div class="card-body">
                         <h5 class="card-title pb-3">Step 2</h5>
-                        <p class="lead-list">Mail your registration form & check/cash payment to: </p>
+                        <p class="lead-alt-2">Mail your registration form & check/cash payment to: </p>
                         <div class="contact-info d-flex flex-column align-items-center">
                             <p class="text-center address-header pt-1">Reunion Committe</p>
                             <p class="text-center address">2872 Saxon Street NE</p>
                             <p class="text-center address">Canton, OH 44721</p>
                         </div>
+
                     </div>
                 </div>
 
             </div>
+
         </div>
 
     </div>
@@ -499,7 +503,7 @@
 
     <!--REUNION COMMITTEE LIST-->
     <section id="contact">
-        <div class="container mt-1 mt-lg-5" id="updates">
+        <div class=" mt-1 mt-lg-5" id="updates">
 
             <div class="container spacer mt-4 d-flex flex-column align-items-center" id="updates">
                 <div class="updates pt-3 pb-5" id="committee">
@@ -518,7 +522,7 @@
                             </div>
 
                             <div class="contact-info d-flex flex-column align-items-center">
-                                <p class="text-center contact-name">Dawn Cammel</p>
+                                <p class="text-center contact-name">Dawn Cammel Poremba</p>
                                 <a href="mailto:dawnylp@live.com">dawnylp@live.com</a>
                             </div>
 
@@ -566,7 +570,7 @@
                             </div>
 
                             <div class="contact-info d-flex flex-column align-items-center">
-                                <p class="text-center contact-name">Terry Boyer Scheetz</p>
+                                <p class="text-center contact-name">Teri Boyer Scheetz</p>
                                 <a href="mailto:tkscheetz@yahoo.com">tkscheetz@yahoo.com</a>
                             </div>
 
@@ -656,7 +660,7 @@
                     <p class="lead-alt text-center">We've tracked down some yearbook photos but are always on the
                         lookout for more! Please feel free to email us your favorite photos for us to use.</p>
 
-                    <div class="text-center mb-5"> <a href="../pdf/GHS Yearbook Photos.pdf" target="_blank"
+                    <div class="text-center mb-5"> <a href="mailto:photos@glenwood1975.com" target="_blank"
                             class="mx-auto">
                             <button type="button" class="btn btn-primary">Submit Photos</button>
                         </a>
@@ -728,6 +732,31 @@
                 integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
                 crossorigin="anonymous"></script>
 
+            <script>
+                // Set the target date for the countdown (Example: 1st January 2026)
+                var targetDate = new Date("Oct 4, 2025 18:00:00").getTime();
+
+                // Update the countdown every second
+                var countdownInterval = setInterval(function () {
+                    var now = new Date().getTime();
+                    var timeLeft = targetDate - now;
+
+                    // Calculate days, hours, minutes, and seconds
+                    var days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+                    var hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    var minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+                    var seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+                    // Display the result in the "countdown" div
+                    document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+                    // If the countdown is finished, display a message
+                    if (timeLeft < 0) {
+                        clearInterval(countdownInterval);
+                        document.getElementById("countdown").innerHTML = "Time to party!";
+                    }
+                }, 1000);
+            </script>
 
 
 
