@@ -83,7 +83,12 @@ p {
   margin-bottom: 0;
 }
 
-
+.post-text-small {
+  font-size: 20px;
+  margin-bottom: -5px;
+  font-weight: 400;
+  text-align: center;
+}
 
 .label-name {
   padding-top: 0 !important;
